@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api_v1;
 
-use App\Models\Kendaraan;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class KendaraanController extends Controller
+class PenjualanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class KendaraanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Kendaraan $kendaraan)
+    public function show($id)
     {
         //
     }
@@ -52,10 +52,10 @@ class KendaraanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kendaraan $kendaraan)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +64,10 @@ class KendaraanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kendaraan $kendaraan)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +75,10 @@ class KendaraanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Kendaraan  $kendaraan
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kendaraan $kendaraan)
+    public function destroy($id)
     {
         //
     }

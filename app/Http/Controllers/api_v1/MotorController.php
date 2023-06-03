@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api_v1;
 
+use App\Http\Controllers\Controller;
 use App\Models\Motor;
 use Illuminate\Http\Request;
 

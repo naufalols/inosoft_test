@@ -15,6 +15,11 @@ class CreateKendaraansTable extends Migration
     {
         Schema::create('kendaraans', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_tipe_kendaraan');
+            $table->year('tahun_kendaraan');
+            $table->enum('tipe_kendaraan', ['motor', 'mobil']);
+            $table->string('warna');
+            $table->decimal('harga');
             $table->timestamps();
         });
     }

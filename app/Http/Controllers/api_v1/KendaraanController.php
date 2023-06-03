@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api_v1;
 
-use App\Models\Mobil;
+use App\Http\Controllers\Controller;
+use App\Models\Kendaraan;
 use Illuminate\Http\Request;
 
-class MobilController extends Controller
+class KendaraanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class MobilController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Mobil  $mobil
+     * @param  \App\Models\Kendaraan  $kendaraan
      * @return \Illuminate\Http\Response
      */
-    public function show(Mobil $mobil)
+    public function show(Kendaraan $kendaraan)
     {
         //
     }
@@ -52,10 +53,10 @@ class MobilController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Mobil  $mobil
+     * @param  \App\Models\Kendaraan  $kendaraan
      * @return \Illuminate\Http\Response
      */
-    public function edit(Mobil $mobil)
+    public function edit(Kendaraan $kendaraan)
     {
         //
     }
@@ -64,10 +65,10 @@ class MobilController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Mobil  $mobil
+     * @param  \App\Models\Kendaraan  $kendaraan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Mobil $mobil)
+    public function update(Request $request, Kendaraan $kendaraan)
     {
         //
     }
@@ -75,10 +76,10 @@ class MobilController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Mobil  $mobil
+     * @param  \App\Models\Kendaraan  $kendaraan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Mobil $mobil)
+    public function destroy(Kendaraan $kendaraan)
     {
         //
     }
